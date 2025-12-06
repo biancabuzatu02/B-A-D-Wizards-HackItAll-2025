@@ -1,4 +1,4 @@
-package client_rotables.src.main.java.com.echipa.rotables.dto;
+package com.echipa.rotables.dto;
 
 public class FlightEventDto {
     

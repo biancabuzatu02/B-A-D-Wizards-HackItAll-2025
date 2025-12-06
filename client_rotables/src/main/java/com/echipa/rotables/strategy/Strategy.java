@@ -1,5 +1,10 @@
-package client_rotables.src.main.java.com.echipa.rotables.strategy;
+package com.echipa.rotables.strategy;
 
-public class Strategy {
-    
+import com.echipa.rotables.dto.HourResponseDto;
+import com.echipa.rotables.dto.PlayRoundRequestDto;
+
+public interface Strategy {
+
+    PlayRoundRequestDto makeDecision(HourResponseDto state);
+
 }

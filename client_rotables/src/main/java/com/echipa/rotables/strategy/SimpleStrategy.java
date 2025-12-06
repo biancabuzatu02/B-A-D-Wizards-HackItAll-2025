@@ -1,5 +1,13 @@
-package client_rotables.src.main.java.com.echipa.rotables.strategy;
+package com.echipa.rotables.strategy;
 
-public class SimpleStrategy {
-    
+import com.echipa.rotables.dto.HourResponseDto;
+import com.echipa.rotables.dto.PlayRoundRequestDto;
+
+public class SimpleStrategy implements Strategy {
+
+    @Override
+    public PlayRoundRequestDto makeDecision(HourResponseDto state) {
+        // momentan decizie goală (sigură, fără penalizări)
+        return new PlayRoundRequestDto();
+    }
 }
