@@ -1,25 +1,28 @@
 package com.echipa.rotables.dto;
 
 import java.util.List;
+import java.util.Map;
 
 public class PlayRoundRequestDto {
 
+    private int day;
+    private int hour;
+
     private List<FlightLoadDto> flightLoads;
-    private List<PurchaseDto> purchases;
 
-    public List<FlightLoadDto> getFlightLoads() {
-        return flightLoads;
-    }
+    private Map<String, Integer> kitPurchasingOrders;
 
-    public void setFlightLoads(List<FlightLoadDto> flightLoads) {
-        this.flightLoads = flightLoads;
-    }
+    public int getDay() { return day; }
+    public void setDay(int day) { this.day = day; }
 
-    public List<PurchaseDto> getPurchases() {
-        return purchases;
-    }
+    public int getHour() { return hour; }
+    public void setHour(int hour) { this.hour = hour; }
 
-    public void setPurchases(List<PurchaseDto> purchases) {
-        this.purchases = purchases;
+    public List<FlightLoadDto> getFlightLoads() { return flightLoads; }
+    public void setFlightLoads(List<FlightLoadDto> flightLoads) { this.flightLoads = flightLoads; }
+
+    public Map<String, Integer> getKitPurchasingOrders() { return kitPurchasingOrders; }
+    public void setKitPurchasingOrders(Map<String, Integer> kitPurchasingOrders) {
+        this.kitPurchasingOrders = kitPurchasingOrders;
     }
 }

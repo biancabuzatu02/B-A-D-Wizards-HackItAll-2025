@@ -6,15 +6,19 @@ public class PenaltyDto {
     private double penalty;
     private String reason;
 
-    public String getCode() {
-        return code;
-    }
+    private String flightId;
+    private String flightNumber;
 
-    public double getPenalty() {
-        return penalty;
-    }
+    private int issuedDay;
+    private int issuedHour;
 
-    public String getReason() {
-        return reason;
-    }
+    public String getCode() { return code; }
+    public double getPenalty() { return penalty; }
+    public String getReason() { return reason; }
+
+    public String getFlightId() { return flightId; }
+    public String getFlightNumber() { return flightNumber; }
+
+    public int getIssuedDay() { return issuedDay; }
+    public int getIssuedHour() { return issuedHour; }
 }

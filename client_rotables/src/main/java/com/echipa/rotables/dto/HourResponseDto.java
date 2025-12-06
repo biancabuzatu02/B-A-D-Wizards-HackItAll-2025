@@ -8,20 +8,11 @@ public class HourResponseDto {
     private int hour;
     private double totalCost;
     private List<PenaltyDto> penalties;
+    private List<FlightEventDto> flightUpdates;
 
-    public int getDay() {
-        return day;
-    }
-
-    public int getHour() {
-        return hour;
-    }
-
-    public double getTotalCost() {
-        return totalCost;
-    }
-
-    public List<PenaltyDto> getPenalties() {
-        return penalties;
-    }
+    public int getDay() { return day; }
+    public int getHour() { return hour; }
+    public double getTotalCost() { return totalCost; }
+    public List<PenaltyDto> getPenalties() { return penalties; }
+    public List<FlightEventDto> getFlightUpdates() { return flightUpdates; }
 }
